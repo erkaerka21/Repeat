@@ -17,6 +17,11 @@ for (let Y = 1; Y <= 10; Y++) {
 }
 
 //daalgavar3
+for (let Y = 1; Y <= 10; Y++) {
+  if (Y % 2 === 0) {
+    console.log("Тэгш тоо : ", Y);
+  }
+}
 
 //daalgavar4
 let Too = 0;
@@ -45,29 +50,91 @@ for (let Z = 1; Z <= 20; Z++) {
 console.log("Дурын N хүртэлх тооны факториал : ", RandomNfac);
 
 //daalgavar7
-let Utoo = "";
-for (let i = 1; i <= 5; i++) {
-  Utoo += i + " ";
+// let Utoo = "";
+// for (let i = 1; i <= 5; i++) {
+//   Utoo += i + " ";
+// }
+// console.log(Utoo);
+// Utoo = 0;
+// let Usum = 0;
+// for (let i = 1; i <= 5; i++) {
+//   Utoo += 1;
+//   Usum = Usum + Utoo;
+// }
+// console.log("Өгөгдсөн натурал тооны нийлбэр : ", Usum);
+
+let number = 123;
+console.log("Өгөгдсөн тоо : ", number);
+let digit = 0;
+let Sum = 0;
+
+while (number !== 0) {
+  digit = number % 10;
+  number = number - digit;
+  number = number / 10;
+  Sum = Sum + digit;
 }
-console.log(Utoo);
-Utoo = 0;
-let Usum = 0;
-for (let i = 1; i <= 5; i++) {
-  Utoo += 1;
-  Usum = Usum + Utoo;
-}
-console.log("Өгөгдсөн натурал тооны нийлбэр : ", Usum);
+console.log("Өгөгдсөн тооны нийлбэр", Sum);
 
 //daalgavar8
-let Ugugdul = "";
-for (let i = 1; i <= 8; i++) {
-  Ugugdul += i + " ";
+let UgugdsunToo = 123456;
+console.log("Өгөгдсөн тоо : ", UgugdsunToo);
+let TOO = 0;
+let Tsum = 0;
+while (UgugdsunToo !== 0) {
+  TOO = UgugdsunToo % 10;
+  UgugdsunToo = UgugdsunToo - TOO;
+  UgugdsunToo = UgugdsunToo / 10;
+  if (TOO % 2 === 0) {
+    Tsum = Tsum + TOO;
+  }
 }
-console.log(Ugugdul);
-Ugugdul = 0;
-let UgugduliinSum = 0;
-for (let i = 0; i <= 8; i++) {
-  Ugugdul += 2;
-  UgugduliinSum = UgugduliinSum + Ugugdul;
+console.log("Өгөгдсөн тоонуудын тэгш тооны нийлбэр", Tsum);
+
+//daalgavar9
+let RandomNumber = 123456789;
+console.log("Өгөгдсөн тоонууд : ", RandomNumber);
+TOO = 0;
+Tsum = 0;
+while (RandomNumber !== 0) {
+  TOO = RandomNumber % 10;
+  RandomNumber = RandomNumber - TOO;
+  RandomNumber = RandomNumber / 10;
+  if (TOO % 2 === 1) {
+    console.log("Өгөгдсөн тоонуудын сондгой тоо : ", TOO);
+    Tsum = Tsum + TOO;
+  }
 }
-console.log(UgugduliinSum);
+console.log("Өгөгдсөн тоонуудын сондгой тооны нийлбэр", Tsum);
+
+//daalgavar10
+let RNumber = 12345678;
+console.log("Өгөгдсөн тоонууд : ", RNumber);
+TOO = 0;
+Tsum = 0;
+while (RNumber !== 0) {
+  TOO = RNumber % 10;
+  RNumber = RNumber - TOO;
+  RNumber = RNumber / 10;
+  if (TOO % 2 === 0) {
+    console.log("Өгөгдсөн тоонуудын тэгш тоо : ", TOO);
+    Tsum = Tsum + TOO;
+  }
+}
+console.log("Өгөгдсөн тоонуудын тэгш тооны нийлбэр", Tsum);
+
+//daalgavar11
+let NumberR = 1234567;
+console.log("Өгөгдсөн тоонууд : ", NumberR);
+TOO = 0;
+Tsum = 0;
+while (NumberR !== 0) {
+  TOO = NumberR % 10;
+  NumberR = NumberR - TOO;
+  NumberR = NumberR / 10;
+  console.log("Өгөгдсөн тоо : ", TOO);
+  while (TOO !== 7654321) {
+    NumberR = NumberR * 10;
+    TOO = NumberR + TOO;
+  }
+}
