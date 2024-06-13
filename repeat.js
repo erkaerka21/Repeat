@@ -133,8 +133,8 @@ while (NumberR !== 0) {
   NumberR = NumberR - TOO;
   NumberR = NumberR / 10;
   console.log("Өгөгдсөн тоо : ", TOO);
-  while (TOO !== 7654321) {
-    NumberR = NumberR * 10;
-    TOO = NumberR + TOO;
-  }
+  // while (TOO !== 7654321) {
+  //   NumberR = NumberR * 10;
+  //   TOO = NumberR + TOO;
+  // }
 }
