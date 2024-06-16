@@ -126,15 +126,12 @@ console.log("Өгөгдсөн тоонуудын тэгш тооны нийлб�
 //daalgavar11
 let NumberR = 1234567;
 console.log("Өгөгдсөн тоонууд : ", NumberR);
-TOO = 0;
-Tsum = 0;
-while (NumberR !== 0) {
+TOO;
+let urvuuToo = 0;
+while (NumberR % 10 !== 0) {
   TOO = NumberR % 10;
+  urvuuToo = urvuuToo * 10 + TOO;
   NumberR = NumberR - TOO;
   NumberR = NumberR / 10;
-  console.log("Өгөгдсөн тоо : ", TOO);
-  // while (TOO !== 7654321) {
-  //   NumberR = NumberR * 10;
-  //   TOO = NumberR + TOO;
-  // }
 }
+console.log("өгөгдсөн тооны урвуу тоо : ", urvuuToo);
